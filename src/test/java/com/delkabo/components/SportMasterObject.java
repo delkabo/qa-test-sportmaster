@@ -24,7 +24,6 @@ public class SportMasterObject {
     public SportMasterObject clickTab() {
         executeJavaScript("document.body.style.webkitTransform = 'scale(0.9)'");
         footer.scrollTo().click();
-        executeJavaScript("document.body.style.webkitTransform = 'scale(1)'");
         return this;
     }
 
