@@ -43,6 +43,7 @@ public class SportMasterObject {
     }
 
     public SportMasterObject haveTitle(String shouldN){
+        vacTitle.scrollTo();
         vacTitle.shouldHave(text(shouldN));
         return this;
     }
