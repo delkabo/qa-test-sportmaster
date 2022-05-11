@@ -1,5 +1,6 @@
 package com.delkabo.components;
 
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.text;
@@ -21,7 +22,9 @@ public class SportMasterObject {
     }
 
     public SportMasterObject clickTab() {
+        executeJavaScript("document.body.style.webkitTransform = 'scale(0.9)'");
         footer.scrollTo().click();
+        executeJavaScript("document.body.style.webkitTransform = 'scale(1)'");
         return this;
     }
 
