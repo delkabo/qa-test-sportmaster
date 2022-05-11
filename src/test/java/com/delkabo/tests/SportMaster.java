@@ -10,7 +10,10 @@ public class SportMaster extends TestBase{
 
     @Test
     @DisplayName("Search qa automation vacancies")
+
     void sportMaster() {
+        String searched = "Qa automation";
+
         sportMasterObject.openPage()
                 .clickTab()
                 .clickPage()

@@ -38,12 +38,14 @@ public class SportMasterObject {
     }
 
     public SportMasterObject clickSearch(String searchN) {
+        executeJavaScript("document.body.style.webkitTransform = 'scale(0.6)'");
         vacContainer.$(withText(searchN)).scrollTo().click();
+        executeJavaScript("document.body.style.webkitTransform = 'scale(1)'");
         return this;
     }
 
     public SportMasterObject haveTitle(String shouldN){
-        executeJavaScript("document.body.style.webkitTransform = 'scale(0.65)'");
+        vacTitle.scrollIntoView(true);
         vacTitle.shouldHave(text(shouldN));
         return this;
     }
