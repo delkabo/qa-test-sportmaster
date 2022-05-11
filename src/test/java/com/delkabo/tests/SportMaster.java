@@ -4,7 +4,7 @@ import com.delkabo.components.SportMasterObject;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class SportMaster {
+public class SportMaster extends TestBase{
 
     SportMasterObject sportMasterObject = new SportMasterObject();
 
