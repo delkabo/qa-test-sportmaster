@@ -43,7 +43,7 @@ public class SportMasterObject {
     }
 
     public SportMasterObject haveTitle(String shouldN){
-        vacTitle.scrollTo();
+        executeJavaScript("document.body.style.webkitTransform = 'scale(0.65)'");
         vacTitle.shouldHave(text(shouldN));
         return this;
     }
